@@ -9,6 +9,18 @@ Finish time: 1700
 Actual time needed to complete: 3 hours
 
 
+Number and name of feature: add modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1300
+
+Finish time: 1600
+
+Actual time needed to complete: 3 hours
+
+
+
 
 
 

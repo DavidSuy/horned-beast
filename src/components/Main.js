@@ -1,23 +1,10 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import hornedBeastArr from "../hornedBeastArr";
-
-// let curHornedBeastArr = [];
-// for (let i = 0; i <= hornedBeastArr.length; i++) {
-//   console.log(hornedBeastArr[i].title);
-//   curHornedBeastArr.push(
-//     <>
-//     <h2>{hornedBeastArr[i].title}</h2>
-//     <HornedBeast src={hornedBeastArr[i].image_url} alt={hornedBeastArr[i].keyword}/>
-//     <p>{hornedBeastArr[i].description}</p>
-//   </>)
-// }
-// console.log(curHornedBeastArr);
+import data from "../data";
 
 class Main extends React.Component {
   render() {
-    let hornedBeasts = hornedBeastArr.map((beast, idx) => {
-      // console.log(beast._id);
+    let hornedBeasts = data.map((beast, idx) => {
       return (
         <HornedBeast
           key={idx}
@@ -26,11 +13,10 @@ class Main extends React.Component {
           description={beast.description}
           keyword={beast.keyword}
           horns={beast.horns}
+          handleImgClick={this.props.handleImgClick}
         />
       );
     });
-
-    // console.log(hornedBeasts);
 
     return (
       <main>
