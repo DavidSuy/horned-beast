@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import "../css/HornedBeast.css";
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -14,11 +15,17 @@ class HornedBeast extends React.Component {
     this.setState({
       likes: this.state.likes + 1,
     });
-    console.log(this.state);
   };
 
   handleImgClick = () => {
     this.props.handleImgClick(this.props);
+  };
+
+  handleSumit = (e) => {
+    e.preventDefault();
+    this.setState({
+      option: "",
+    });
   };
 
   render() {

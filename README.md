@@ -1,3 +1,4 @@
+
 Number and name of feature: Allow user to vote
 
 Estimate of time needed to complete: 2 hours
@@ -8,6 +9,7 @@ Finish time: 1700
 
 Actual time needed to complete: 3 hours
 
+---------------------
 
 Number and name of feature: add modal
 
@@ -19,13 +21,17 @@ Finish time: 1600
 
 Actual time needed to complete: 3 hours
 
+-----------------------------------
 
+Number and name of feature: add horn filter
 
+Estimate of time needed to complete: 2 hours
 
+Start time: 1300
 
+Finish time: 1500
 
-
-
+Actual time needed to complete: 2 hours
 
 <!-- # Getting Started with Create React App
 
