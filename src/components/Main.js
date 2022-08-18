@@ -1,10 +1,11 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import data from "../data";
+// import data from "../data";
+import AppForm from "./AppForm";
 
 class Main extends React.Component {
   render() {
-    let hornedBeasts = data.map((beast, idx) => {
+    let hornedBeasts = this.props.filteredBeast.map((beast, idx) => {
       return (
         <HornedBeast
           key={idx}
@@ -20,6 +21,7 @@ class Main extends React.Component {
 
     return (
       <main>
+        <AppForm handleSubmit={this.props.handleSubmit} />
         <div id="beast-container">{hornedBeasts}</div>
       </main>
     );
