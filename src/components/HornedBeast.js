@@ -17,6 +17,10 @@ class HornedBeast extends React.Component {
     console.log(this.state);
   };
 
+  handleImgClick = () => {
+    this.props.handleImgClick(this.props);
+  };
+
   render() {
     return (
       <Card
@@ -24,7 +28,11 @@ class HornedBeast extends React.Component {
           width: "18rem",
         }}
       >
-        <Card.Img variant="top" src={this.props.imgUrl} />
+        <Card.Img
+          onClick={this.handleImgClick}
+          variant="top"
+          src={this.props.imgUrl}
+        />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Subtitle>
